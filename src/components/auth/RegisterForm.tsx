@@ -7,6 +7,7 @@ import {
   InputGroup,
   InputLeftElement,
   InputRightElement,
+  Text,
 } from '@chakra-ui/react'
 /* eslint-disable indent */
 import {
@@ -65,7 +66,7 @@ const RegisterForm: FC = () => {
           )}
         </InputGroup>
         {formik.touched.login && formik.errors.login ? (
-          <div>{formik.errors.login}</div>
+          <Text mb={4}>{formik.errors.login}</Text>
         ) : null}
         <InputGroup mb={4}>
           <InputLeftElement>
@@ -99,7 +100,7 @@ const RegisterForm: FC = () => {
           )}
         </InputGroup>
         {formik.touched.password && formik.errors.password ? (
-          <div>{formik.errors.password}</div>
+          <Text mb={4}>{formik.errors.password}</Text>
         ) : null}
         <InputGroup mb={4}>
           <InputLeftElement>
@@ -134,7 +135,7 @@ const RegisterForm: FC = () => {
         </InputGroup>
         {formik.touched.passwordConfirmation &&
         formik.errors.passwordConfirmation ? (
-          <div>{formik.errors.passwordConfirmation}</div>
+          <Text mb={4}>{formik.errors.passwordConfirmation}</Text>
         ) : null}
         <Center>
           <Button px={10} type='submit'>

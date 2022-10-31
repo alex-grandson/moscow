@@ -7,6 +7,7 @@ import {
   InputGroup,
   InputLeftElement,
   InputRightElement,
+  Text,
 } from '@chakra-ui/react'
 import {
   CheckIcon,
@@ -59,7 +60,7 @@ const LoginForm: FC = () => {
           )}
         </InputGroup>
         {formik.touched.login && formik.errors.login ? (
-          <div>{formik.errors.login}</div>
+          <Text mb={4}>{formik.errors.login}</Text>
         ) : null}
         <InputGroup mb={4}>
           <InputLeftElement>
@@ -93,7 +94,7 @@ const LoginForm: FC = () => {
           )}
         </InputGroup>
         {formik.touched.password && formik.errors.password ? (
-          <div>{formik.errors.password}</div>
+          <Text mb={4}>{formik.errors.password}</Text>
         ) : null}
         <Center>
           <Button px={10} type='submit'>

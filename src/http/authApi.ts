@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { User } from '../models/User'
+import { User } from '../types/User'
 
 const API_HOST = process.env.API_HOST || 'http://localhost:8000'
 
